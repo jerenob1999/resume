@@ -1,7 +1,12 @@
+import About from "./components/aboutMe"
+import Proyects from "./components/proyects"
+import { aboutMe,skills,experience } from "./data/data"
+
 export default function Home() {
   return (
-    <main>
-      HOLA QUE TAL COMO ESTAS
-    </main>
+    <div>
+      <About skills={skills} aboutMe={aboutMe} />
+      <Proyects experience={experience} />
+    </div>
   )
 }
