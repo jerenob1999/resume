@@ -18,10 +18,12 @@ export default function RootLayout({
 }) {
   return (
     <html>
-      <body className='flex flex-col '>
+    <body className='flex flex-col sm:flex-row'>
         <Sidebar info={info} />
-        {children}
-      </body>
-    </html>
+        <main className='grow-full p-8 sm:p-16 w-full sm:basis-3/4  ml-auto'>
+          {children}
+        </main>
+    </body>
+  </html>
   )
 }
