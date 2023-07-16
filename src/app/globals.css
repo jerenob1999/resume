@@ -10,7 +10,7 @@
         @apply text-2xl
     }
     h3 {
-		@apply text-xl;
+		@apply text-xl p-5 flex justify-center font-bold
 	}
     h4 {
         @apply text-lg
