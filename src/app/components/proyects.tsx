@@ -8,10 +8,22 @@ interface Experience {
 function Proyects({experience}: {experience: Experience[]}) {
   return (
     <div>
-        <h3>{experience[0].title}</h3>
-        {experience[0].body.map((exp,index) => <p key={index}>{exp}</p>)}
-        <h3>{experience[1].title}</h3>
-        {experience[1].body.map((exp,index) => <p key={index}>{exp}</p>)}
+        {experience.map((exp,index) => {
+            return (
+                <section key={index}>
+                <h3>{exp.title}</h3>
+                <ul>
+                    {exp.body.map((body,index) => {
+                        return (
+                            <li key={index} >
+                                {body}
+                            </li>
+                        )
+                    })}
+                </ul>
+                </section>
+            )
+        })}
         </div>
   )
 }
