@@ -57,7 +57,7 @@ export const experience = [
     title: "Experience",
     body: [
       "- Developed a full working ecommerce with payments methods, authentication system and admin panel experience with Javascript,Next,Node, Express and MongoDb",
-      "- made a videogame aplication with full crud with  Javascript,React,Node, Express and PostgreSQL",
+      "- Made a videogame aplication with full crud with  Javascript,React,Node, Express and PostgreSQL",
     ],
   },
   {
